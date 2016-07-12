@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6434DCA906672E34EE8E97B5 /* Pods_Grimoire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46587B2CD957C7C62FB4570A /* Pods_Grimoire.framework */; };
+		99F8E46E168AD704A304EB5D /* Pods_GrimoireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1687E718D0AF99089A8BEAA5 /* Pods_GrimoireTests.framework */; };
+		DC1ACA461D353F66002A3071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1ACA451D353F66002A3071 /* AppDelegate.swift */; };
+		DC1ACA481D353F66002A3071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1ACA471D353F66002A3071 /* ViewController.swift */; };
+		DC1ACA4B1D353F66002A3071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1ACA491D353F66002A3071 /* Main.storyboard */; };
+		DC1ACA4D1D353F66002A3071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1ACA4C1D353F66002A3071 /* Assets.xcassets */; };
+		DC1ACA501D353F66002A3071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1ACA4E1D353F66002A3071 /* LaunchScreen.storyboard */; };
+		DC1ACA5B1D353F66002A3071 /* GrimoireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1ACA5A1D353F66002A3071 /* GrimoireTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC1ACA571D353F66002A3071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC1ACA3A1D353F66002A3071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC1ACA411D353F66002A3071;
+			remoteInfo = Grimoire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1687E718D0AF99089A8BEAA5 /* Pods_GrimoireTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrimoireTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BD6953CBF9D3DABA7D83F25 /* Pods-GrimoireTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrimoireTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrimoireTests/Pods-GrimoireTests.release.xcconfig"; sourceTree = "<group>"; };
+		46587B2CD957C7C62FB4570A /* Pods_Grimoire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grimoire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A225C795C8A976844F71B4F2 /* Pods-Grimoire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grimoire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grimoire/Pods-Grimoire.debug.xcconfig"; sourceTree = "<group>"; };
+		BFD0C0E9DF8CCAE8546F0C2F /* Pods-Grimoire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grimoire.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grimoire/Pods-Grimoire.release.xcconfig"; sourceTree = "<group>"; };
+		DC1ACA421D353F66002A3071 /* Grimoire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grimoire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1ACA451D353F66002A3071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC1ACA471D353F66002A3071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC1ACA4A1D353F66002A3071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC1ACA4C1D353F66002A3071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC1ACA4F1D353F66002A3071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC1ACA511D353F66002A3071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC1ACA561D353F66002A3071 /* GrimoireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrimoireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1ACA5A1D353F66002A3071 /* GrimoireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrimoireTests.swift; sourceTree = "<group>"; };
+		DC1ACA5C1D353F66002A3071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E16AF2653B6CA70AD770B3E6 /* Pods-GrimoireTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrimoireTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrimoireTests/Pods-GrimoireTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC1ACA3F1D353F66002A3071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6434DCA906672E34EE8E97B5 /* Pods_Grimoire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1ACA531D353F66002A3071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F8E46E168AD704A304EB5D /* Pods_GrimoireTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC1ACA391D353F66002A3071 = {
+			isa = PBXGroup;
+			children = (
+				DC1ACA441D353F66002A3071 /* Grimoire */,
+				DC1ACA591D353F66002A3071 /* GrimoireTests */,
+				DC1ACA431D353F66002A3071 /* Products */,
+				F57FD52F6410ECF4F95BFB53 /* Pods */,
+				E178B9E50EF88DF62C91D4E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC1ACA431D353F66002A3071 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC1ACA421D353F66002A3071 /* Grimoire.app */,
+				DC1ACA561D353F66002A3071 /* GrimoireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC1ACA441D353F66002A3071 /* Grimoire */ = {
+			isa = PBXGroup;
+			children = (
+				DC1ACA451D353F66002A3071 /* AppDelegate.swift */,
+				DC1ACA471D353F66002A3071 /* ViewController.swift */,
+				DC1ACA491D353F66002A3071 /* Main.storyboard */,
+				DC1ACA4C1D353F66002A3071 /* Assets.xcassets */,
+				DC1ACA4E1D353F66002A3071 /* LaunchScreen.storyboard */,
+				DC1ACA511D353F66002A3071 /* Info.plist */,
+			);
+			path = Grimoire;
+			sourceTree = "<group>";
+		};
+		DC1ACA591D353F66002A3071 /* GrimoireTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC1ACA5A1D353F66002A3071 /* GrimoireTests.swift */,
+				DC1ACA5C1D353F66002A3071 /* Info.plist */,
+			);
+			path = GrimoireTests;
+			sourceTree = "<group>";
+		};
+		E178B9E50EF88DF62C91D4E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46587B2CD957C7C62FB4570A /* Pods_Grimoire.framework */,
+				1687E718D0AF99089A8BEAA5 /* Pods_GrimoireTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F57FD52F6410ECF4F95BFB53 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A225C795C8A976844F71B4F2 /* Pods-Grimoire.debug.xcconfig */,
+				BFD0C0E9DF8CCAE8546F0C2F /* Pods-Grimoire.release.xcconfig */,
+				E16AF2653B6CA70AD770B3E6 /* Pods-GrimoireTests.debug.xcconfig */,
+				2BD6953CBF9D3DABA7D83F25 /* Pods-GrimoireTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC1ACA411D353F66002A3071 /* Grimoire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC1ACA5F1D353F66002A3071 /* Build configuration list for PBXNativeTarget "Grimoire" */;
+			buildPhases = (
+				8005AF174AA768720D21417B /* [CP] Check Pods Manifest.lock */,
+				DC1ACA3E1D353F66002A3071 /* Sources */,
+				DC1ACA3F1D353F66002A3071 /* Frameworks */,
+				DC1ACA401D353F66002A3071 /* Resources */,
+				E7AE2D2C651DBCDCC35E8C76 /* [CP] Embed Pods Frameworks */,
+				9233B0381C882A9792A4E507 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Grimoire;
+			productName = Grimoire;
+			productReference = DC1ACA421D353F66002A3071 /* Grimoire.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC1ACA551D353F66002A3071 /* GrimoireTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC1ACA621D353F66002A3071 /* Build configuration list for PBXNativeTarget "GrimoireTests" */;
+			buildPhases = (
+				767DDA4FFB712392B93D2C3A /* [CP] Check Pods Manifest.lock */,
+				DC1ACA521D353F66002A3071 /* Sources */,
+				DC1ACA531D353F66002A3071 /* Frameworks */,
+				DC1ACA541D353F66002A3071 /* Resources */,
+				F536AF50171365DEF4566E54 /* [CP] Embed Pods Frameworks */,
+				B316698FCC9E9AF3A90DD521 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC1ACA581D353F66002A3071 /* PBXTargetDependency */,
+			);
+			name = GrimoireTests;
+			productName = GrimoireTests;
+			productReference = DC1ACA561D353F66002A3071 /* GrimoireTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC1ACA3A1D353F66002A3071 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "View The Space";
+				TargetAttributes = {
+					DC1ACA411D353F66002A3071 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DC1ACA551D353F66002A3071 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DC1ACA411D353F66002A3071;
+					};
+				};
+			};
+			buildConfigurationList = DC1ACA3D1D353F66002A3071 /* Build configuration list for PBXProject "Grimoire" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC1ACA391D353F66002A3071;
+			productRefGroup = DC1ACA431D353F66002A3071 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC1ACA411D353F66002A3071 /* Grimoire */,
+				DC1ACA551D353F66002A3071 /* GrimoireTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC1ACA401D353F66002A3071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1ACA501D353F66002A3071 /* LaunchScreen.storyboard in Resources */,
+				DC1ACA4D1D353F66002A3071 /* Assets.xcassets in Resources */,
+				DC1ACA4B1D353F66002A3071 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1ACA541D353F66002A3071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		767DDA4FFB712392B93D2C3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8005AF174AA768720D21417B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9233B0381C882A9792A4E507 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grimoire/Pods-Grimoire-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B316698FCC9E9AF3A90DD521 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrimoireTests/Pods-GrimoireTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7AE2D2C651DBCDCC35E8C76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Grimoire/Pods-Grimoire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F536AF50171365DEF4566E54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GrimoireTests/Pods-GrimoireTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC1ACA3E1D353F66002A3071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1ACA481D353F66002A3071 /* ViewController.swift in Sources */,
+				DC1ACA461D353F66002A3071 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1ACA521D353F66002A3071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1ACA5B1D353F66002A3071 /* GrimoireTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC1ACA581D353F66002A3071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC1ACA411D353F66002A3071 /* Grimoire */;
+			targetProxy = DC1ACA571D353F66002A3071 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC1ACA491D353F66002A3071 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC1ACA4A1D353F66002A3071 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC1ACA4E1D353F66002A3071 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC1ACA4F1D353F66002A3071 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC1ACA5D1D353F66002A3071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC1ACA5E1D353F66002A3071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC1ACA601D353F66002A3071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A225C795C8A976844F71B4F2 /* Pods-Grimoire.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Grimoire/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.Grimoire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC1ACA611D353F66002A3071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFD0C0E9DF8CCAE8546F0C2F /* Pods-Grimoire.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Grimoire/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.Grimoire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC1ACA631D353F66002A3071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E16AF2653B6CA70AD770B3E6 /* Pods-GrimoireTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GrimoireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.GrimoireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grimoire.app/Grimoire";
+			};
+			name = Debug;
+		};
+		DC1ACA641D353F66002A3071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BD6953CBF9D3DABA7D83F25 /* Pods-GrimoireTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GrimoireTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.GrimoireTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grimoire.app/Grimoire";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC1ACA3D1D353F66002A3071 /* Build configuration list for PBXProject "Grimoire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC1ACA5D1D353F66002A3071 /* Debug */,
+				DC1ACA5E1D353F66002A3071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC1ACA5F1D353F66002A3071 /* Build configuration list for PBXNativeTarget "Grimoire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC1ACA601D353F66002A3071 /* Debug */,
+				DC1ACA611D353F66002A3071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC1ACA621D353F66002A3071 /* Build configuration list for PBXNativeTarget "GrimoireTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC1ACA631D353F66002A3071 /* Debug */,
+				DC1ACA641D353F66002A3071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC1ACA3A1D353F66002A3071 /* Project object */;
+}
