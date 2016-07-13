@@ -3,7 +3,6 @@
 //  Grimoire
 //
 //  Created by Hesham Salman on 7/12/16.
-//  Copyright © 2016 View The Space. All rights reserved.
 //
 
 import UIKit
@@ -43,4 +42,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

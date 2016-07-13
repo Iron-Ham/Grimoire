@@ -1,25 +1,168 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="we5-12-UXE">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Grimoire Cards-->
+        <scene sceneID="Pzu-gJ-fee">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="D2C-Fh-jPK" customClass="GrimoireCardTVC" customModule="Grimoire" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="298" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ju8-kE-hVF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GrimoireCardCell" rowHeight="259" id="Oha-dp-JAu" customClass="GrimoireCardCell" customModule="Grimoire" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="259"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oha-dp-JAu" id="8Bk-jZ-DaO">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="258.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a3C-fL-ufH">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="258"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vfn-D5-LPQ" userLabel="Image Cover">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="258"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ghosts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCY-V2-ppu">
+                                                    <rect key="frame" x="8" y="8" width="62" height="26"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                    <color key="textColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXr-nK-4yg">
+                                                    <rect key="frame" x="549.5" y="12.5" width="42.5" height="16"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
+                                                    <color key="textColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YV-JS-kId">
+                                                    <rect key="frame" x="0.0" y="221.5" width="600" height="36"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlock this card by playing Destiny." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcC-fv-7KY">
+                                                            <rect key="frame" x="8" y="8" width="584" height="19.5"/>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                                            <color key="textColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.062745098039215685" green="0.086274509803921567" blue="0.11764705882352941" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="lcC-fv-7KY" secondAttribute="bottom" constant="8" id="1y3-Ze-kZr"/>
+                                                        <constraint firstAttribute="trailing" secondItem="lcC-fv-7KY" secondAttribute="trailing" constant="8" id="4Wc-23-dGd"/>
+                                                        <constraint firstItem="lcC-fv-7KY" firstAttribute="top" secondItem="8YV-JS-kId" secondAttribute="top" constant="8" id="Kaw-GQ-fqL"/>
+                                                        <constraint firstItem="lcC-fv-7KY" firstAttribute="leading" secondItem="8YV-JS-kId" secondAttribute="leading" constant="8" id="q51-o6-aad"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqd-W9-q9J">
+                                                    <rect key="frame" x="8" y="104.5" width="584" height="109.5"/>
+                                                    <string key="text">Built from machinery and the Traveler's Light, Ghosts guide their Guardian companions in the quest to reclaim our solar system. Every Ghost seeks out its Guardian among the ancient dead. The Ghost serves as scout, librarian, and mechanic, waking ancient machinery and cracking alien codes. In the right situations, a Ghost can even save a Guardian from death. But Ghosts are not immortal. As far as Guardians know, every loss is irreplaceable."</string>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                    <color key="textColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBZ-af-cLg">
+                                                    <rect key="frame" x="0.0" y="42" width="600" height="54"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O44-7u-o47">
+                                                            <rect key="frame" x="8" y="8" width="584" height="36.5"/>
+                                                            <string key="text">"In its dying breath, the Traveler created the Ghosts...To seek out those who can wield its Light as a weapon. Guardians, to protect us, and do what the Traveler itself no longer can."</string>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                            <color key="textColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="- The Speaker" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nO5-wq-UhR">
+                                                            <rect key="frame" x="505" y="52" width="87" height="1.5"/>
+                                                            <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="14"/>
+                                                            <color key="textColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.062745098040000002" green="0.086274509799999996" blue="0.1176470588" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="nO5-wq-UhR" firstAttribute="top" secondItem="O44-7u-o47" secondAttribute="bottom" constant="8" id="95v-XW-7Sc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="nO5-wq-UhR" secondAttribute="bottom" priority="1" constant="8" id="IlI-4g-agf"/>
+                                                        <constraint firstAttribute="height" priority="1" id="PPl-It-Ebs"/>
+                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nO5-wq-UhR" secondAttribute="bottom" id="PhS-cD-dHp"/>
+                                                        <constraint firstItem="O44-7u-o47" firstAttribute="top" secondItem="WBZ-af-cLg" secondAttribute="top" constant="8" id="URV-LS-QL2"/>
+                                                        <constraint firstItem="O44-7u-o47" firstAttribute="leading" secondItem="WBZ-af-cLg" secondAttribute="leading" constant="8" id="ZKH-fo-apn"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" id="c5L-e4-khe"/>
+                                                        <constraint firstAttribute="trailing" secondItem="nO5-wq-UhR" secondAttribute="trailing" constant="8" id="dbO-hE-sMD"/>
+                                                        <constraint firstAttribute="trailing" secondItem="O44-7u-o47" secondAttribute="trailing" constant="8" id="u1Q-ce-nwe"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.39517780172413791" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="TXr-nK-4yg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PCY-V2-ppu" secondAttribute="trailing" constant="8" id="3BH-6U-kiT"/>
+                                                <constraint firstItem="TXr-nK-4yg" firstAttribute="centerY" secondItem="PCY-V2-ppu" secondAttribute="centerY" id="69S-sr-Sne"/>
+                                                <constraint firstItem="tqd-W9-q9J" firstAttribute="leading" secondItem="Vfn-D5-LPQ" secondAttribute="leading" constant="8" id="6Qa-4T-PFO"/>
+                                                <constraint firstItem="WBZ-af-cLg" firstAttribute="leading" secondItem="Vfn-D5-LPQ" secondAttribute="leading" id="7Nd-79-hYo"/>
+                                                <constraint firstAttribute="trailing" secondItem="tqd-W9-q9J" secondAttribute="trailing" constant="8" id="Bef-5g-TM1"/>
+                                                <constraint firstItem="tqd-W9-q9J" firstAttribute="top" secondItem="WBZ-af-cLg" secondAttribute="bottom" constant="8" id="FTI-it-EFy"/>
+                                                <constraint firstItem="PCY-V2-ppu" firstAttribute="leading" secondItem="Vfn-D5-LPQ" secondAttribute="leading" constant="8" id="H1p-77-rk9"/>
+                                                <constraint firstItem="WBZ-af-cLg" firstAttribute="top" secondItem="PCY-V2-ppu" secondAttribute="bottom" constant="8" id="Lrj-58-w0l"/>
+                                                <constraint firstAttribute="trailing" secondItem="8YV-JS-kId" secondAttribute="trailing" id="OTA-TV-QIM"/>
+                                                <constraint firstAttribute="trailing" secondItem="WBZ-af-cLg" secondAttribute="trailing" id="P8c-AH-g7Q"/>
+                                                <constraint firstItem="8YV-JS-kId" firstAttribute="top" secondItem="tqd-W9-q9J" secondAttribute="bottom" constant="8" id="UwH-St-5ey"/>
+                                                <constraint firstAttribute="trailing" secondItem="TXr-nK-4yg" secondAttribute="trailing" constant="8" id="gIP-6U-BJS"/>
+                                                <constraint firstItem="PCY-V2-ppu" firstAttribute="top" secondItem="Vfn-D5-LPQ" secondAttribute="top" constant="8" id="jvf-5f-D24"/>
+                                                <constraint firstAttribute="bottom" secondItem="8YV-JS-kId" secondAttribute="bottom" id="kQ7-u5-c3L"/>
+                                                <constraint firstItem="8YV-JS-kId" firstAttribute="leading" secondItem="Vfn-D5-LPQ" secondAttribute="leading" id="op2-TS-fLz"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="a3C-fL-ufH" secondAttribute="bottom" id="DcM-IH-H53"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vfn-D5-LPQ" secondAttribute="trailing" id="WX4-ib-rJK"/>
+                                        <constraint firstItem="Vfn-D5-LPQ" firstAttribute="leading" secondItem="8Bk-jZ-DaO" secondAttribute="leading" id="aP8-BJ-Qcl"/>
+                                        <constraint firstAttribute="trailing" secondItem="a3C-fL-ufH" secondAttribute="trailing" id="i5E-97-D0T"/>
+                                        <constraint firstAttribute="bottom" secondItem="Vfn-D5-LPQ" secondAttribute="bottom" id="jyY-TD-8Er"/>
+                                        <constraint firstItem="a3C-fL-ufH" firstAttribute="top" secondItem="8Bk-jZ-DaO" secondAttribute="top" id="r4v-qO-XiQ"/>
+                                        <constraint firstItem="a3C-fL-ufH" firstAttribute="leading" secondItem="8Bk-jZ-DaO" secondAttribute="leading" id="vbU-3J-9tQ"/>
+                                        <constraint firstItem="Vfn-D5-LPQ" firstAttribute="top" secondItem="8Bk-jZ-DaO" secondAttribute="top" id="zJH-ex-qJu"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cardAttributionLabel" destination="nO5-wq-UhR" id="Rhx-Jc-Fym"/>
+                                    <outlet property="cardDescriptionLabel" destination="tqd-W9-q9J" id="PFo-ix-LQQ"/>
+                                    <outlet property="cardIntroLabel" destination="O44-7u-o47" id="yFP-yQ-SLV"/>
+                                    <outlet property="cardNameLabel" destination="PCY-V2-ppu" id="ji0-rB-wHC"/>
+                                    <outlet property="cardUnlockLabel" destination="lcC-fv-7KY" id="eKL-ew-cHa"/>
+                                    <outlet property="grimoireImageView" destination="a3C-fL-ufH" id="PNd-8e-Vcl"/>
+                                    <outlet property="pointsLabel" destination="TXr-nK-4yg" id="eI6-pY-5Jb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="D2C-Fh-jPK" id="1Dq-w3-qdX"/>
+                            <outlet property="delegate" destination="D2C-Fh-jPK" id="DND-FP-rmC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Grimoire Cards" id="gnN-jg-wS1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K77-i6-PXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="225" y="597"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sz1-wT-w5V">
+            <objects>
+                <navigationController id="we5-12-UXE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ky2-7z-64T">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="D2C-Fh-jPK" kind="relationship" relationship="rootViewController" id="v3x-yU-oMf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zt4-vP-EkC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-622" y="597"/>
         </scene>
     </scenes>
 </document>

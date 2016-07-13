@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6434DCA906672E34EE8E97B5 /* Pods_Grimoire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46587B2CD957C7C62FB4570A /* Pods_Grimoire.framework */; };
-		99F8E46E168AD704A304EB5D /* Pods_GrimoireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1687E718D0AF99089A8BEAA5 /* Pods_GrimoireTests.framework */; };
+		027FCC58F41FE1E20F0AA6DE /* Pods_Grimoire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 453C3A9FF2089B428DA66251 /* Pods_Grimoire.framework */; };
+		B3B69A4A73F87357E178FAB2 /* Pods_GrimoireTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA26746E46F2A55567D60FDC /* Pods_GrimoireTests.framework */; };
 		DC1ACA461D353F66002A3071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1ACA451D353F66002A3071 /* AppDelegate.swift */; };
-		DC1ACA481D353F66002A3071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1ACA471D353F66002A3071 /* ViewController.swift */; };
 		DC1ACA4B1D353F66002A3071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1ACA491D353F66002A3071 /* Main.storyboard */; };
 		DC1ACA4D1D353F66002A3071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1ACA4C1D353F66002A3071 /* Assets.xcassets */; };
 		DC1ACA501D353F66002A3071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1ACA4E1D353F66002A3071 /* LaunchScreen.storyboard */; };
 		DC1ACA5B1D353F66002A3071 /* GrimoireTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1ACA5A1D353F66002A3071 /* GrimoireTests.swift */; };
+		DC6967171D3541FC00A16B94 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6967161D3541FC00A16B94 /* APIClient.swift */; };
+		DC6967191D35420400A16B94 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6967181D35420400A16B94 /* NetworkClient.swift */; };
+		DC69671B1D35421100A16B94 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69671A1D35421100A16B94 /* HTTPMethod.swift */; };
+		DC69671D1D3543DA00A16B94 /* GrimoireManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69671C1D3543DA00A16B94 /* GrimoireManager.swift */; };
+		DC69671F1D3545DA00A16B94 /* GrimoireCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69671E1D3545DA00A16B94 /* GrimoireCard.swift */; };
+		DC6967211D35471B00A16B94 /* GrimoireResponseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6967201D35471B00A16B94 /* GrimoireResponseParser.swift */; };
+		DC6967231D35473000A16B94 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6967221D35473000A16B94 /* Parser.swift */; };
+		DC6967251D354BCF00A16B94 /* GrimoirePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6967241D354BCF00A16B94 /* GrimoirePage.swift */; };
+		DC6967271D355B0200A16B94 /* HighResolutionImageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6967261D355B0200A16B94 /* HighResolutionImageParser.swift */; };
+		DC6967291D355C0000A16B94 /* HighResolutionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6967281D355C0000A16B94 /* HighResolutionImage.swift */; };
+		DC69672B1D35604C00A16B94 /* GrimoirePageParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69672A1D35604C00A16B94 /* GrimoirePageParser.swift */; };
+		DC69672D1D35681D00A16B94 /* GrimoireCardParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC69672C1D35681D00A16B94 /* GrimoireCardParser.swift */; };
+		DC6967331D356B2E00A16B94 /* GrimoireCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6967321D356B2E00A16B94 /* GrimoireCardCell.swift */; };
+		DC6967351D3574F400A16B94 /* GrimoireCardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6967341D3574F400A16B94 /* GrimoireCardTVC.swift */; };
+		DC876A031D357B0F003405F8 /* GrimoireSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC876A021D357B0F003405F8 /* GrimoireSectionHeader.xib */; };
+		DC876A051D357BB4003405F8 /* GrimoireSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC876A041D357BB4003405F8 /* GrimoireSectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1687E718D0AF99089A8BEAA5 /* Pods_GrimoireTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrimoireTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BD6953CBF9D3DABA7D83F25 /* Pods-GrimoireTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrimoireTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrimoireTests/Pods-GrimoireTests.release.xcconfig"; sourceTree = "<group>"; };
-		46587B2CD957C7C62FB4570A /* Pods_Grimoire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grimoire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A225C795C8A976844F71B4F2 /* Pods-Grimoire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grimoire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grimoire/Pods-Grimoire.debug.xcconfig"; sourceTree = "<group>"; };
-		BFD0C0E9DF8CCAE8546F0C2F /* Pods-Grimoire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grimoire.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grimoire/Pods-Grimoire.release.xcconfig"; sourceTree = "<group>"; };
+		150C842BFBA7287914C58EB4 /* Pods-Grimoire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grimoire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Grimoire/Pods-Grimoire.debug.xcconfig"; sourceTree = "<group>"; };
+		157C9118D47A20119EBCBBAE /* Pods-Grimoire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grimoire.release.xcconfig"; path = "Pods/Target Support Files/Pods-Grimoire/Pods-Grimoire.release.xcconfig"; sourceTree = "<group>"; };
+		453C3A9FF2089B428DA66251 /* Pods_Grimoire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Grimoire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA4C8287E207037DDB40E14 /* Pods-GrimoireTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrimoireTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrimoireTests/Pods-GrimoireTests.debug.xcconfig"; sourceTree = "<group>"; };
+		96623EE21B13F8C1DF090D8F /* Pods-GrimoireTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrimoireTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GrimoireTests/Pods-GrimoireTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA26746E46F2A55567D60FDC /* Pods_GrimoireTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrimoireTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1ACA421D353F66002A3071 /* Grimoire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grimoire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1ACA451D353F66002A3071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC1ACA471D353F66002A3071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC1ACA4A1D353F66002A3071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC1ACA4C1D353F66002A3071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC1ACA4F1D353F66002A3071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,7 +58,22 @@
 		DC1ACA561D353F66002A3071 /* GrimoireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrimoireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1ACA5A1D353F66002A3071 /* GrimoireTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrimoireTests.swift; sourceTree = "<group>"; };
 		DC1ACA5C1D353F66002A3071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E16AF2653B6CA70AD770B3E6 /* Pods-GrimoireTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrimoireTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GrimoireTests/Pods-GrimoireTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC6967161D3541FC00A16B94 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		DC6967181D35420400A16B94 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		DC69671A1D35421100A16B94 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		DC69671C1D3543DA00A16B94 /* GrimoireManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrimoireManager.swift; sourceTree = "<group>"; };
+		DC69671E1D3545DA00A16B94 /* GrimoireCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrimoireCard.swift; sourceTree = "<group>"; };
+		DC6967201D35471B00A16B94 /* GrimoireResponseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrimoireResponseParser.swift; sourceTree = "<group>"; };
+		DC6967221D35473000A16B94 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		DC6967241D354BCF00A16B94 /* GrimoirePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrimoirePage.swift; sourceTree = "<group>"; };
+		DC6967261D355B0200A16B94 /* HighResolutionImageParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighResolutionImageParser.swift; sourceTree = "<group>"; };
+		DC6967281D355C0000A16B94 /* HighResolutionImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighResolutionImage.swift; sourceTree = "<group>"; };
+		DC69672A1D35604C00A16B94 /* GrimoirePageParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrimoirePageParser.swift; sourceTree = "<group>"; };
+		DC69672C1D35681D00A16B94 /* GrimoireCardParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrimoireCardParser.swift; sourceTree = "<group>"; };
+		DC6967321D356B2E00A16B94 /* GrimoireCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrimoireCardCell.swift; sourceTree = "<group>"; };
+		DC6967341D3574F400A16B94 /* GrimoireCardTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrimoireCardTVC.swift; sourceTree = "<group>"; };
+		DC876A021D357B0F003405F8 /* GrimoireSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GrimoireSectionHeader.xib; sourceTree = "<group>"; };
+		DC876A041D357BB4003405F8 /* GrimoireSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrimoireSectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6434DCA906672E34EE8E97B5 /* Pods_Grimoire.framework in Frameworks */,
+				027FCC58F41FE1E20F0AA6DE /* Pods_Grimoire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,21 +89,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F8E46E168AD704A304EB5D /* Pods_GrimoireTests.framework in Frameworks */,
+				B3B69A4A73F87357E178FAB2 /* Pods_GrimoireTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7813FB758E89C4815D166B2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				453C3A9FF2089B428DA66251 /* Pods_Grimoire.framework */,
+				BA26746E46F2A55567D60FDC /* Pods_GrimoireTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79C6C7205544C3A4A5756DFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				150C842BFBA7287914C58EB4 /* Pods-Grimoire.debug.xcconfig */,
+				157C9118D47A20119EBCBBAE /* Pods-Grimoire.release.xcconfig */,
+				8DA4C8287E207037DDB40E14 /* Pods-GrimoireTests.debug.xcconfig */,
+				96623EE21B13F8C1DF090D8F /* Pods-GrimoireTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC1ACA391D353F66002A3071 = {
 			isa = PBXGroup;
 			children = (
 				DC1ACA441D353F66002A3071 /* Grimoire */,
 				DC1ACA591D353F66002A3071 /* GrimoireTests */,
 				DC1ACA431D353F66002A3071 /* Products */,
-				F57FD52F6410ECF4F95BFB53 /* Pods */,
-				E178B9E50EF88DF62C91D4E7 /* Frameworks */,
+				79C6C7205544C3A4A5756DFB /* Pods */,
+				7813FB758E89C4815D166B2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,9 +139,11 @@
 		DC1ACA441D353F66002A3071 /* Grimoire */ = {
 			isa = PBXGroup;
 			children = (
+				DC6967311D35683600A16B94 /* Views */,
+				DC6967301D35683200A16B94 /* Controllers */,
+				DC69672F1D35682E00A16B94 /* Models */,
+				DC69672E1D35682200A16B94 /* Networking */,
 				DC1ACA451D353F66002A3071 /* AppDelegate.swift */,
-				DC1ACA471D353F66002A3071 /* ViewController.swift */,
-				DC1ACA491D353F66002A3071 /* Main.storyboard */,
 				DC1ACA4C1D353F66002A3071 /* Assets.xcassets */,
 				DC1ACA4E1D353F66002A3071 /* LaunchScreen.storyboard */,
 				DC1ACA511D353F66002A3071 /* Info.plist */,
@@ -108,24 +160,49 @@
 			path = GrimoireTests;
 			sourceTree = "<group>";
 		};
-		E178B9E50EF88DF62C91D4E7 /* Frameworks */ = {
+		DC69672E1D35682200A16B94 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				46587B2CD957C7C62FB4570A /* Pods_Grimoire.framework */,
-				1687E718D0AF99089A8BEAA5 /* Pods_GrimoireTests.framework */,
+				DC6967201D35471B00A16B94 /* GrimoireResponseParser.swift */,
+				DC6967221D35473000A16B94 /* Parser.swift */,
+				DC6967261D355B0200A16B94 /* HighResolutionImageParser.swift */,
+				DC69672A1D35604C00A16B94 /* GrimoirePageParser.swift */,
+				DC69672C1D35681D00A16B94 /* GrimoireCardParser.swift */,
+				DC6967181D35420400A16B94 /* NetworkClient.swift */,
+				DC69671A1D35421100A16B94 /* HTTPMethod.swift */,
+				DC6967161D3541FC00A16B94 /* APIClient.swift */,
+				DC69671C1D3543DA00A16B94 /* GrimoireManager.swift */,
 			);
-			name = Frameworks;
+			name = Networking;
 			sourceTree = "<group>";
 		};
-		F57FD52F6410ECF4F95BFB53 /* Pods */ = {
+		DC69672F1D35682E00A16B94 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A225C795C8A976844F71B4F2 /* Pods-Grimoire.debug.xcconfig */,
-				BFD0C0E9DF8CCAE8546F0C2F /* Pods-Grimoire.release.xcconfig */,
-				E16AF2653B6CA70AD770B3E6 /* Pods-GrimoireTests.debug.xcconfig */,
-				2BD6953CBF9D3DABA7D83F25 /* Pods-GrimoireTests.release.xcconfig */,
+				DC6967281D355C0000A16B94 /* HighResolutionImage.swift */,
+				DC69671E1D3545DA00A16B94 /* GrimoireCard.swift */,
+				DC6967241D354BCF00A16B94 /* GrimoirePage.swift */,
 			);
-			name = Pods;
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DC6967301D35683200A16B94 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC6967341D3574F400A16B94 /* GrimoireCardTVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DC6967311D35683600A16B94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC1ACA491D353F66002A3071 /* Main.storyboard */,
+				DC6967321D356B2E00A16B94 /* GrimoireCardCell.swift */,
+				DC876A021D357B0F003405F8 /* GrimoireSectionHeader.xib */,
+				DC876A041D357BB4003405F8 /* GrimoireSectionHeader.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +257,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "View The Space";
+				ORGANIZATIONNAME = "Salman";
 				TargetAttributes = {
 					DC1ACA411D353F66002A3071 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -217,6 +294,7 @@
 			files = (
 				DC1ACA501D353F66002A3071 /* LaunchScreen.storyboard in Resources */,
 				DC1ACA4D1D353F66002A3071 /* Assets.xcassets in Resources */,
+				DC876A031D357B0F003405F8 /* GrimoireSectionHeader.xib in Resources */,
 				DC1ACA4B1D353F66002A3071 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,8 +406,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC1ACA481D353F66002A3071 /* ViewController.swift in Sources */,
+				DC6967331D356B2E00A16B94 /* GrimoireCardCell.swift in Sources */,
+				DC6967251D354BCF00A16B94 /* GrimoirePage.swift in Sources */,
+				DC876A051D357BB4003405F8 /* GrimoireSectionHeader.swift in Sources */,
+				DC6967271D355B0200A16B94 /* HighResolutionImageParser.swift in Sources */,
+				DC69671F1D3545DA00A16B94 /* GrimoireCard.swift in Sources */,
+				DC6967211D35471B00A16B94 /* GrimoireResponseParser.swift in Sources */,
+				DC6967351D3574F400A16B94 /* GrimoireCardTVC.swift in Sources */,
+				DC69672B1D35604C00A16B94 /* GrimoirePageParser.swift in Sources */,
+				DC69672D1D35681D00A16B94 /* GrimoireCardParser.swift in Sources */,
+				DC69671D1D3543DA00A16B94 /* GrimoireManager.swift in Sources */,
 				DC1ACA461D353F66002A3071 /* AppDelegate.swift in Sources */,
+				DC6967231D35473000A16B94 /* Parser.swift in Sources */,
+				DC6967171D3541FC00A16B94 /* APIClient.swift in Sources */,
+				DC69671B1D35421100A16B94 /* HTTPMethod.swift in Sources */,
+				DC6967191D35420400A16B94 /* NetworkClient.swift in Sources */,
+				DC6967291D355C0000A16B94 /* HighResolutionImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,36 +548,36 @@
 		};
 		DC1ACA601D353F66002A3071 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A225C795C8A976844F71B4F2 /* Pods-Grimoire.debug.xcconfig */;
+			baseConfigurationReference = 150C842BFBA7287914C58EB4 /* Pods-Grimoire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Grimoire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.Grimoire;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salman.Grimoire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		DC1ACA611D353F66002A3071 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFD0C0E9DF8CCAE8546F0C2F /* Pods-Grimoire.release.xcconfig */;
+			baseConfigurationReference = 157C9118D47A20119EBCBBAE /* Pods-Grimoire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Grimoire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.Grimoire;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salman.Grimoire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		DC1ACA631D353F66002A3071 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E16AF2653B6CA70AD770B3E6 /* Pods-GrimoireTests.debug.xcconfig */;
+			baseConfigurationReference = 8DA4C8287E207037DDB40E14 /* Pods-GrimoireTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GrimoireTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.GrimoireTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salman.GrimoireTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grimoire.app/Grimoire";
 			};
@@ -493,12 +585,12 @@
 		};
 		DC1ACA641D353F66002A3071 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BD6953CBF9D3DABA7D83F25 /* Pods-GrimoireTests.release.xcconfig */;
+			baseConfigurationReference = 96623EE21B13F8C1DF090D8F /* Pods-GrimoireTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = GrimoireTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.viewthespace.GrimoireTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salman.GrimoireTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Grimoire.app/Grimoire";
 			};
