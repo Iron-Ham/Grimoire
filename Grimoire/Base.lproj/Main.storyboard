@@ -9,7 +9,7 @@
         <scene sceneID="Pzu-gJ-fee">
             <objects>
                 <tableViewController id="D2C-Fh-jPK" customClass="GrimoireCardTVC" customModule="Grimoire" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="298" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ju8-kE-hVF">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="298" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ju8-kE-hVF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -18,14 +18,14 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="259"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Oha-dp-JAu" id="8Bk-jZ-DaO">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="258.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="259"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a3C-fL-ufH">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="258"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="259"/>
                                         </imageView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vfn-D5-LPQ" userLabel="Image Cover">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="258"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="259"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ghosts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCY-V2-ppu">
                                                     <rect key="frame" x="8" y="8" width="62" height="26"/>
@@ -34,16 +34,16 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXr-nK-4yg">
-                                                    <rect key="frame" x="549.5" y="12.5" width="42.5" height="16"/>
+                                                    <rect key="frame" x="549" y="13" width="43" height="16"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                                     <color key="textColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YV-JS-kId">
-                                                    <rect key="frame" x="0.0" y="221.5" width="600" height="36"/>
+                                                    <rect key="frame" x="0.0" y="223" width="600" height="36"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlock this card by playing Destiny." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcC-fv-7KY">
-                                                            <rect key="frame" x="8" y="8" width="584" height="19.5"/>
+                                                            <rect key="frame" x="8" y="8" width="584" height="20"/>
                                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                                             <color key="textColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -58,40 +58,39 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqd-W9-q9J">
-                                                    <rect key="frame" x="8" y="104.5" width="584" height="109.5"/>
+                                                    <rect key="frame" x="8" y="105" width="584" height="110"/>
                                                     <string key="text">Built from machinery and the Traveler's Light, Ghosts guide their Guardian companions in the quest to reclaim our solar system. Every Ghost seeks out its Guardian among the ancient dead. The Ghost serves as scout, librarian, and mechanic, waking ancient machinery and cracking alien codes. In the right situations, a Ghost can even save a Guardian from death. But Ghosts are not immortal. As far as Guardians know, every loss is irreplaceable."</string>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                                     <color key="textColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBZ-af-cLg">
-                                                    <rect key="frame" x="0.0" y="42" width="600" height="54"/>
+                                                    <rect key="frame" x="0.0" y="42" width="600" height="55"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O44-7u-o47">
-                                                            <rect key="frame" x="8" y="8" width="584" height="36.5"/>
-                                                            <string key="text">"In its dying breath, the Traveler created the Ghosts...To seek out those who can wield its Light as a weapon. Guardians, to protect us, and do what the Traveler itself no longer can."</string>
-                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="- The Speaker" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nO5-wq-UhR">
+                                                            <rect key="frame" x="505" y="37" width="87" height="18"/>
+                                                            <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="14"/>
                                                             <color key="textColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="- The Speaker" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nO5-wq-UhR">
-                                                            <rect key="frame" x="505" y="52" width="87" height="1.5"/>
-                                                            <fontDescription key="fontDescription" name="Futura-MediumItalic" family="Futura" pointSize="14"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O44-7u-o47">
+                                                            <rect key="frame" x="8" y="0.0" width="584" height="37"/>
+                                                            <string key="text">"In its dying breath, the Traveler created the Ghosts...To seek out those who can wield its Light as a weapon. Guardians, to protect us, and do what the Traveler itself no longer can."</string>
+                                                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                                             <color key="textColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.062745098040000002" green="0.086274509799999996" blue="0.1176470588" alpha="0.5" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstItem="nO5-wq-UhR" firstAttribute="top" secondItem="O44-7u-o47" secondAttribute="bottom" constant="8" id="95v-XW-7Sc"/>
-                                                        <constraint firstAttribute="bottom" secondItem="nO5-wq-UhR" secondAttribute="bottom" priority="1" constant="8" id="IlI-4g-agf"/>
+                                                        <constraint firstItem="O44-7u-o47" firstAttribute="top" secondItem="WBZ-af-cLg" secondAttribute="top" id="8Zu-Jg-uxY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="nO5-wq-UhR" secondAttribute="trailing" constant="8" id="CE1-4r-cby"/>
                                                         <constraint firstAttribute="height" priority="1" id="PPl-It-Ebs"/>
-                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nO5-wq-UhR" secondAttribute="bottom" id="PhS-cD-dHp"/>
-                                                        <constraint firstItem="O44-7u-o47" firstAttribute="top" secondItem="WBZ-af-cLg" secondAttribute="top" constant="8" id="URV-LS-QL2"/>
-                                                        <constraint firstItem="O44-7u-o47" firstAttribute="leading" secondItem="WBZ-af-cLg" secondAttribute="leading" constant="8" id="ZKH-fo-apn"/>
+                                                        <constraint firstItem="nO5-wq-UhR" firstAttribute="top" secondItem="O44-7u-o47" secondAttribute="bottom" id="Tj4-W1-2dF"/>
+                                                        <constraint firstItem="O44-7u-o47" firstAttribute="leading" secondItem="WBZ-af-cLg" secondAttribute="leading" constant="8" id="XNB-vb-S5j"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" id="c5L-e4-khe"/>
-                                                        <constraint firstAttribute="trailing" secondItem="nO5-wq-UhR" secondAttribute="trailing" constant="8" id="dbO-hE-sMD"/>
-                                                        <constraint firstAttribute="trailing" secondItem="O44-7u-o47" secondAttribute="trailing" constant="8" id="u1Q-ce-nwe"/>
+                                                        <constraint firstAttribute="trailing" secondItem="O44-7u-o47" secondAttribute="trailing" constant="8" id="iqk-f8-hRn"/>
+                                                        <constraint firstAttribute="bottom" secondItem="nO5-wq-UhR" secondAttribute="bottom" id="xPj-Bk-GiJ"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>

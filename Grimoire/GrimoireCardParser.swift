@@ -23,24 +23,25 @@ struct GrimoireCardParser: Parser {
 
     func parseToObject(dictionary: [NSObject : AnyObject]) -> GrimoireCard? {
         guard let cardId = dictionary[Keys.CardId] as? Int,
-        let cardName = dictionary[Keys.CardName] as? String,
-        let cardIntro = dictionary[Keys.CardIntro] as? String,
-        let cardDescription = dictionary[Keys.CardDescription] as? String,
-        let unlockText = dictionary[Keys.UnlockText] as? String,
-        let rarity = dictionary[Keys.Rarity] as? Int,
-        let points = dictionary[Keys.Points] as? Int,
-        let highResolutionImageDictionary = dictionary[Keys.HighResolutionImage] as? [NSObject: AnyObject] else {
+            let cardName = dictionary[Keys.CardName] as? String,
+            let cardDescription = dictionary[Keys.CardDescription] as? String,
+            let rarity = dictionary[Keys.Rarity] as? Int,
+            let points = dictionary[Keys.Points] as? Int,
+            let highResolutionImageDictionary = dictionary["highResolution"] as? [NSObject: AnyObject] else {
             return nil
         }
 
+        let unlockText = dictionary[Keys.UnlockText] as? String ?? "Unlock this card by playing Destiny."
+
         let highResolutionImage = HighResolutionImageParser().parseToObject(highResolutionImageDictionary)
 
+        let cardIntro = dictionary[Keys.CardIntro] as? String
         let attributionString = dictionary[Keys.CardIntroAttribution] as? String
 
         return GrimoireCard(cardId: cardId,
-                            cardName: cardName,
+                            cardName: cleanString(cardName),
                             cardIntro: cleanString(cardIntro),
-                            cardIntroAttribution: cleanString(attributionString ?? ""),
+                            cardIntroAttribution: cleanString(attributionString),
                             cardDescription: cleanString(cardDescription),
                             unlockHowToText: cleanString(unlockText),
                             rarity: rarity,
@@ -49,7 +50,8 @@ struct GrimoireCardParser: Parser {
     }
 }
 
-func cleanString(string: String) -> String {
+func cleanString(string: String?) -> String {
+    guard let string = string else { return "" }
     return string.stringByReplacingOccurrencesOfString("<[^>]+>", withString: "", options: .RegularExpressionSearch, range: nil)
         .stringByReplacingOccurrencesOfString("&quot;", withString: "\"")
         .stringByReplacingOccurrencesOfString("&#39;", withString: "'")

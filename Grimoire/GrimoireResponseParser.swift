@@ -27,7 +27,9 @@ struct GrimoireResponseParser: Parser {
 
         for page in themeCollection {
             let pageCollection = page[Keys.PageCollection] as! [[NSObject: AnyObject]]
-            pages.appendContentsOf(pageCollection.flatMap { self.grimoirePageParser.parseToObject($0) })
+            let mapping = pageCollection.flatMap { self.grimoirePageParser.parseToObject($0) }
+            pages.appendContentsOf(mapping)
+
         }
 
         return pages
